@@ -7,7 +7,7 @@ export async function connectDB(){
         console.log('MongoDB connected successfully');
     } catch (error){
         console.log('MongoDB connection error: ', error);
-        process.exit(1);
+        throw error;
     }
 }
 

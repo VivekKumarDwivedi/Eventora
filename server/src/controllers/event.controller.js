@@ -41,7 +41,8 @@ export async function createEvent(req,res){
             category,
             totalSeats,
             ticketPrice,
-            imageUrl
+            imageUrl,
+            createdBy: req.user._id
         });
         
         res.status(201).json(event);

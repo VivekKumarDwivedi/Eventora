@@ -78,7 +78,7 @@ export async function loginUser(req,res){
         name: user.name,
         email:user.email,
         role:user.role,
-        token: generateToken(user_id, user.role),
+        token: generateToken(user._id, user.role),
     })
 
 }
